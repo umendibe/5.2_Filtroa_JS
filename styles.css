@@ -10,3 +10,13 @@ body {
     text-align: center;
 }
 
+.filtro_elementuak {
+    display: flex;
+    justify-content: center;
+}
+
+.filtro_elementuak button {
+    margin-right: 12px;
+    width: 80px;
+    height: 80px;
+}
