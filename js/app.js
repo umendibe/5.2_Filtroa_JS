@@ -72,3 +72,10 @@ const arropa = [
         category: 'zapatillak'
     }
 ]
+
+const porduktuakBistaratu(bistaratzekoProduktuak) {
+    const kontenidoa = document.getElementByIdById("kontenidoa")
+
+    kontenidoa.innerHTML = ""
+
+}
