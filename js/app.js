@@ -1,3 +1,4 @@
+
 const arropa = [
     {
         produktuIzena: "Kamiseta1",
@@ -73,9 +74,47 @@ const arropa = [
     }
 ]
 
-const porduktuakBistaratu(bistaratzekoProduktuak) {
+const porduktuakBistaratu = (bistaratzekoProduktuak) => {
     const kontenidoa = document.getElementByIdById("kontenidoa")
 
     kontenidoa.innerHTML = ""
-
+    bistaratzekoProduktuak.forEach(produktua => {
+        const div = document.createElement("div")
+        div.classname = 'produktuak'
+        div.innerHTML = `
+      <img src="${produktua.img}" alt="alt">
+      <h3>${produktua.produktuIzena}</h3>
+      <p class="Prezioa"> $ ${produktua.Prezioa}</p>
+      <button>Karritora gehitu</button>
+    `
+    kontenidoa.append(div)
+    })
 }
+
+const filterProducts = (category) => {
+    const bistaratzekoProduktuak = arropa.filter(produktua => produktua.category === category) 
+    porduktuakBistaratu(bistaratzekoProduktuak) 
+}
+
+const prakakBtn = document.getElementsById('prakak');
+const kamisetakBtn = document.getElementById('kamisetak');
+const sudaderaBtn = document.getElementById('sudaderak');
+const zapatillakBtn = document.getElementById('zapatillak');
+
+prakakBtn.addEventListener('click', () => {
+    filterProducts('prakak');
+});
+
+kamisetakBtn.addEventListener('click', () => {
+    filterProducts('kamisetak');
+});
+
+sudaderaBtn.addEventListener('click', () => {
+    filterProducts('sudaderak');
+});
+
+zapatillakBtn.addEventListener('click', () => {
+    filterProducts('zapatillak');
+});
+
+porduktuakBistaratu(produktuak);
