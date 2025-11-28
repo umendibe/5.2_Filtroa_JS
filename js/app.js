@@ -36,6 +36,39 @@ const arropa = [
         category: 'prakak'
     },
     {
-        
+        produktuIzena: "Sudadera1",
+        Prezioa: 50,
+        img: "img/sudaderak/sudadera1.jpeg",
+        category: 'sudaderak'
+    },
+    {
+        produktuIzena: "Sudadera2",
+        Prezioa: 50,
+        img: "img/sudaderak/sudadera2.jpeg",
+        category: 'sudaderak'
+    },
+    {
+        produktuIzena: "Sudadera3",
+        Prezioa: 50,
+        img: "img/sudaderak/sudadera3.jpeg",
+        category: 'sudaderak'
+    },
+    {
+        produktuIzena: "Zapatilla1",
+        Prezioa: 200,
+        img: "img/zapatillak/zapatillak1.jpeg",
+        category: 'zapatillak'
+    },
+    {
+        produktuIzena: "Zapatilla2",
+        Prezioa: 200,
+        img: "img/zapatillak/zapatillak2.jpeg",
+        category: 'zapatillak'
+    },
+    {
+        produktuIzena: "Zapatilla3",
+        Prezioa: 200,
+        img: "img/zapatillak/zapatillak3.jpeg",
+        category: 'zapatillak'
     }
 ]
