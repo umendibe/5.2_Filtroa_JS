@@ -1,22 +1,92 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #EEAECA;
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-/*HEADER */
-
-#titulua {
+header {
+    background: #1a1a1a;
+    padding: 20px;
     text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    letter-spacing: 3px;
 }
 
 .filtro_elementuak {
     display: flex;
     justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
 }
 
 .filtro_elementuak button {
-    margin-right: 12px;
-    width: 80px;
-    height: 80px;
+    background: white;
+    border: 2px solid #555;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.filtro_elementuak button:hover {
+    background: #555;
+    color: white;
+    transform: scale(1.1);
+}
+
+.produktuak {
+    display: grid;
+    gap: 25px;
+    padding: 20px;
+}
+
+.produktuak > div {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+
+.produktuak img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.produktuak h3 {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+}
+
+.Prezioa {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.produktuak button {
+    background: #1a73e8;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.produktuak button:hover {
+    background: #0d47a1;
+}
+
+
