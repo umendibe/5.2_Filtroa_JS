@@ -9,7 +9,7 @@ const arropa = [
     {
         produktuIzena: "Kamiseta2",
         Prezioa: 15,
-        img: "img/kamisetak/kamiseta2",
+        img: "img/kamisetak/kamseta2.jpeg",
         category: 'kamisetak'
     },
     {
@@ -21,7 +21,7 @@ const arropa = [
     {
         produktuIzena: "Praka1",
         Prezioa: 25,
-        img: "img/prakak/prakak1.jpeg",
+        img: "img/prakak/prkak1.jpeg",
         category: 'prakak'
     },
     {
@@ -57,30 +57,30 @@ const arropa = [
     {
         produktuIzena: "Zapatilla1",
         Prezioa: 200,
-        img: "img/zapatillak/zapatillak1.jpeg",
+        img: "img/zapatillak/zapatillas1.jpeg",
         category: 'zapatillak'
     },
     {
         produktuIzena: "Zapatilla2",
         Prezioa: 200,
-        img: "img/zapatillak/zapatillak2.jpeg",
+        img: "img/zapatillak/zapatillas2.jpeg",
         category: 'zapatillak'
     },
     {
         produktuIzena: "Zapatilla3",
         Prezioa: 200,
-        img: "img/zapatillak/zapatillak3.jpeg",
+        img: "img/zapatillak/zapatillas3.jpeg",
         category: 'zapatillak'
     }
 ]
 
 const porduktuakBistaratu = (bistaratzekoProduktuak) => {
-    const kontenidoa = document.getElementByIdById("kontenidoa")
+    const kontenidoa = document.getElementById("kontenidoa")
 
     kontenidoa.innerHTML = ""
     bistaratzekoProduktuak.forEach(produktua => {
         const div = document.createElement("div")
-        div.classname = 'produktuak'
+        div.className = 'produktuak'
         div.innerHTML = `
       <img src="${produktua.img}" alt="alt">
       <h3>${produktua.produktuIzena}</h3>
@@ -96,7 +96,7 @@ const filterProducts = (category) => {
     porduktuakBistaratu(bistaratzekoProduktuak) 
 }
 
-const prakakBtn = document.getElementsById('prakak');
+const prakakBtn = document.getElementById('prakak');
 const kamisetakBtn = document.getElementById('kamisetak');
 const sudaderaBtn = document.getElementById('sudaderak');
 const zapatillakBtn = document.getElementById('zapatillak');
@@ -117,4 +117,4 @@ zapatillakBtn.addEventListener('click', () => {
     filterProducts('zapatillak');
 });
 
-porduktuakBistaratu(produktuak);
+porduktuakBistaratu(arropa);
