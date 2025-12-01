@@ -117,4 +117,10 @@ zapatillakBtn.addEventListener('click', () => {
     filterProducts('zapatillak');
 });
 
+const guztiakBtn = document.getElementById('guztiak');
+
+guztiakBtn.addEventListener('click', () => {
+    porduktuakBistaratu(arropa);
+});
+
 porduktuakBistaratu(arropa);
